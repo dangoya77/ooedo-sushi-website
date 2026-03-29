@@ -76,3 +76,27 @@ a:hover {
     color: #b89b5e;
     transition: 0.3s;
 }
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .slider img {
+        height: 250px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .catch {
+        font-size: 16px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
