@@ -106,3 +106,55 @@ a:hover {
 .insta-icon:hover {
     opacity: 0.7;
 }
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b89b5e;
+}
+html {
+    scroll-behavior: smooth;
+}
+.menu-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #aaa;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.price {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #b89b5e;
+}
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #b89b5e;
+}
+section {
+    scroll-margin-top: 100px;
+}
