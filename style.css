@@ -200,3 +200,95 @@ section {
 #nav-menu a {
     margin: 5px 0;
 }
+footer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(207, 201, 181, 0.85); /* 半透明で和紙を活かす */
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+footer .instagram-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* 背景をつけて見やすく */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer .instagram-link:hover {
+    opacity: 0.7; /* ふんわり反応 */
+}
+footer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(207, 201, 181, 0.85); /* 半透明で和紙透かす */
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Instagramアイコン */
+footer .instagram-link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer .instagram-link .instagram-icon {
+    width: 32px;      /* サイズ調整 */
+    height: 32px;
+    transition: opacity 0.3s; /* ふんわり効果 */
+}
+
+footer .instagram-link:hover .instagram-icon {
+    opacity: 0.7;     /* ホバーでふんわり光る */
+}
+footer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(207, 201, 181, 0.85); /* 半透明で和紙透かす */
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+footer .instagram-link {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+footer .instagram-link .instagram-icon {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s;
+}
+
+footer .instagram-link:hover .instagram-icon {
+    opacity: 0.7;
+}
+
+/* 著作権・製作者表記 */
+footer .footer-info {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: normal;
+    color: #333;
+}
