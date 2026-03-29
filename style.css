@@ -171,3 +171,32 @@ nav a:hover {
 section {
     scroll-margin-top: 100px;
 }
+/* ハンバーガーボタン */
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* メニュー（初期は非表示） */
+#nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(207, 201, 181, 0.95);
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* メニュー表示時 */
+#nav-menu.active {
+    display: flex;
+}
+
+#nav-menu a {
+    margin: 5px 0;
+}

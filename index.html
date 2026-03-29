@@ -12,7 +12,12 @@
     <!-- ヘッダー -->
  <header>
     <h1>三代目 大江戸寿司</h1>
-    <nav>
+
+    <!-- ハンバーガーボタン -->
+    <div class="menu-btn" onclick="toggleMenu()">≡</div>
+
+    <!-- メニュー -->
+    <nav id="nav-menu">
         <a href="#top">トップ</a>
         <a href="#recommend">おすすめ</a>
         <a href="#news">おしらせ</a>
@@ -95,6 +100,13 @@
     <img src="images/instagram.png" alt="Instagram" class="insta-icon">
 </a>
     </footer>
-
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+}
+</script>
+</body>
+</html>
 </body>
 </html>
