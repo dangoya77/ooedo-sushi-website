@@ -20,11 +20,9 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-    letter-spacing: 3px;
-}
+<a href="https://www.instagram.com/ooedozushi/" target="_blank">
+    <img src="images/instagram.png" alt="Instagram" class="insta-icon">
+</a>
 
 /* トップ */
 #top {
@@ -99,4 +97,12 @@ a:hover {
     iframe {
         height: 250px;
     }
+}
+.insta-icon {
+    width: 40px;
+    transition: 0.3s;
+}
+
+.insta-icon:hover {
+    opacity: 0.7;
 }
