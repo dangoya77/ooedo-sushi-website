@@ -292,3 +292,11 @@ footer .footer-info {
     font-weight: normal;
     color: #333;
 }
+/* メニュー写真 */
+.menu-photo {
+    width: 100%;        /* 画面幅に合わせる */
+    max-width: 400px;   /* 大きすぎないように制限 */
+    display: block;     /* ブロック表示で下に余白 */
+    margin: 10px auto;  /* 上下余白＋中央揃え */
+    border-radius: 8px; /* 角を丸めて和風に */
+}
