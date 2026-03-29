@@ -295,8 +295,25 @@ footer .footer-info {
 /* メニュー写真 */
 .menu-photo {
     width: 100%;        /* 画面幅に合わせる */
-    max-width: 400px;   /* 大きすぎないように制限 */
+    max-width: 400px;   /* 大きすぎないよう制限 */
     display: block;     /* ブロック表示で下に余白 */
     margin: 10px auto;  /* 上下余白＋中央揃え */
     border-radius: 8px; /* 角を丸めて和風に */
+}
+/* カード風メニュー */
+.menu-card {
+    background-color: rgba(255, 255, 255, 0.85); /* 半透明で和紙透かす */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* メニュー写真 */
+.menu-photo {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
 }
