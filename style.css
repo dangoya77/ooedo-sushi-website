@@ -618,3 +618,27 @@ div.map-overlay {
 .catch-copy p {
   font-size: 16px;
 }
+/* ===== アクセス縦レイアウトに変更 ===== */
+.access-container {
+  display: block; /* ←横並びやめる */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* テキスト中央寄せ */
+.access-info {
+  text-align: center;
+}
+
+/* 地図中央＆幅調整 */
+.access-map {
+  margin-top: 20px;
+}
+
+.access-map iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+}
