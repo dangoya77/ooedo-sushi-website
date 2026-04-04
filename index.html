@@ -27,12 +27,16 @@
 </header>
 
     <!-- トップ（スライダー予定） -->
-    <section id="top">
-        <div class="slider">
-            <img src="images/shop1.jpg" alt="店内">
-        </div>
-        <p class="catch">旬の味を、心ゆくまで</p>
-    </section>
+<section id="top" class="top-visual">
+
+  <img src="images/shop1.jpg" alt="店内" class="top-image">
+
+  <div class="catch-copy">
+    <h1>旬を味わう、やさしい贅沢。</h1>
+    <p>こころを込めて、丁寧に。</p>
+  </div>
+
+</section>
 
     <!-- 季節のおすすめ -->
 <section id="recommend">
@@ -75,21 +79,47 @@
 </section>
 
     <!-- アクセス -->
-    <section id="access">
-        <h2>アクセス</h2>
-        <p>東京都中野区本町5-40-5</p>
-        <p><strong>駐車場：</strong><br>
-なし。
-近隣のコインパーキングをご利用ください</p>
+<section id="access">
+  <h2>アクセス</h2>
 
-<p><strong>お支払い方法：</strong><br>
-現金　クレジットカード　PayPay　ナカペイ</p>
+  <div class="access-container">
 
-        <iframe 
-            src="https://www.google.com/maps?q=東京都中野区本町5-40-5&output=embed"
-            width="100%" height="300" style="border:0;">
-        </iframe>
-    </section>
+    <div class="access-info">
+      <p class="address">
+  東京都中野区本町5-40-5<br>
+  最寄り駅：中野新橋駅 徒歩4分
+     </p>
+        <strong>駐車場：</strong><br>
+        なし。近隣のコインパーキングをご利用ください
+      </p>
+
+      <p>
+        <strong>お支払い方法：</strong><br>
+        現金 / クレジットカード / PayPay / ナカペイ
+      </p>
+
+      <a href="https://www.google.com/maps?q=東京都中野区本町5-40-5"
+         target="_blank"
+         class="map-btn">
+         Googleマップで開く
+      </a>
+    </div>
+
+    <div class="access-map">
+
+ <p class="map-title">三代目 大江戸寿司</p>
+
+<div class="map-wrap">
+  <iframe 
+    src="https://www.google.com/maps?q=東京都中野区本町5-40-5&output=embed"
+    loading="lazy">
+  </iframe>
+</div>
+
+</div>
+
+  </div>
+</section>
 
     <!-- フッター -->
    <footer>
@@ -105,13 +135,27 @@
     since2026©sandaime ooedo zushi | powered by DangoyaDenkiSeisakusho
   </p>
 </footer>
+
 <script>
 function toggleMenu() {
     const menu = document.getElementById("nav-menu");
     menu.classList.toggle("active");
 }
 </script>
-</body>
-</html>
+
+<script>
+window.addEventListener("load", () => {
+  const copy = document.querySelector(".catch-copy");
+  copy.style.opacity = "0";
+  copy.style.transform = "translate(-50%, -40%)";
+
+  setTimeout(() => {
+    copy.style.transition = "1.5s";
+    copy.style.opacity = "1";
+    copy.style.transform = "translate(-50%, -45%)";
+  }, 300);
+});
+</script>
+
 </body>
 </html>
