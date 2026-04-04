@@ -642,3 +642,32 @@ div.map-overlay {
   margin: 0 auto;
   display: block;
 }
+/* ===== スマホで画像がはみ出る問題修正 ===== */
+
+/* すべての画像を画面内に収める */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* トップ画像を確実にフィット */
+.top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* スマホ専用調整 */
+@media (max-width: 768px) {
+
+  .top-visual {
+    height: 60vh;   /* ←少し小さくしてバランス調整 */
+  }
+
+  .top-image {
+    width: 100%;
+    height: 100%;
+  }
+
+}
