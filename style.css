@@ -583,3 +583,38 @@ div.map-overlay {
   font-size: 16px;
   letter-spacing: 0.1em;
 }
+/* ===== トップ画像サイズ修正 ===== */
+.top-visual {
+  position: relative;
+  height: 70vh; /* ←100vhだとデカすぎるので調整 */
+  min-height: 400px; /* ←小さくなりすぎ防止 */
+}
+
+/* 画像 */
+.top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== キャッチコピー位置修正 ===== */
+.catch-copy {
+  position: absolute;
+  top: 55%;  /* ←少し下げて中央に近づける */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+}
+
+/* 文字サイズ微調整 */
+.catch-copy h1 {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.catch-copy p {
+  font-size: 16px;
+}
