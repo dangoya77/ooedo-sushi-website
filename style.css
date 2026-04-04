@@ -176,8 +176,20 @@ section {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-size: 28px;
+    font-size: 36px;      /* ←大きくする */
+    font-weight: bold;    /* ←太くする */
     cursor: pointer;
+    color: #333;
+
+    background-color: rgba(255, 255, 255, 0.8); /* ←背景つける */
+    padding: 5px 12px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    opacity: 0.7;
 }
 
 /* メニュー（初期は非表示） */
