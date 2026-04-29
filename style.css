@@ -723,3 +723,24 @@ img {
     padding: 10px 18px;
   }
 }
+/* ===== お知らせバー（GW営業） ===== */
+.notice-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #b89b5e;
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  z-index: 3;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .notice-bar {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
