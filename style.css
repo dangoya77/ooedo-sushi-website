@@ -672,15 +672,12 @@ img {
 
 }
 /* ===== 電話ボタン（ヘッダー） ===== */
-.tel-btn {
-  position: absolute;
-  left: 20px;
-  top: 50%;                 /* ←ここ変更 */
-  transform: translateY(-50%);  /* ←これ追加 */
+ .tel-btn {
   background: #b89b5e;
   color: #fff;
-  padding: 8px 14px;
+  padding: 6px 12px;
   border-radius: 20px;
+  text-decoration: none;
   font-size: 14px;
 }
 
@@ -851,4 +848,20 @@ header {
 /* 上の余白調整 */
 body {
   padding-top: 110px;
+}
+/* ===== メニューを最前面に ===== */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(207, 201, 181, 0.98);
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 3000;   /* ←これが重要 */
+}
+
+#nav-menu.active {
+  display: flex;
 }
